@@ -35,7 +35,9 @@ export default function Navbar() {
         </Link>
 
         {/* Right: search + cart */}
-        <div className="navbar-right">
+<div className="navbar-right">
+  <Link to="/order-tracking" className="navbar-link">Track Order</Link>
+  <Link to="/wishlist" className="navbar-link">Wishlist ❤️</Link>
           <form onSubmit={handleSearch} className="navbar-search">
             <input
               type="text"
