@@ -1,3 +1,4 @@
+import OrderTracking from './pages/OrderTracking';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/dashboard"  element={<Dashboard />} />
           <Route path="/dashboard"  element={<Dashboard />} />
+          <Route path="/order-tracking" element={<OrderTracking />} />
           <Route path="/wishlist" element={<WishlistPage />} />
         </Routes>
         <Footer />
